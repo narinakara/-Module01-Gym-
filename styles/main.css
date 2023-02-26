@@ -85,6 +85,7 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 .content {
     width: 676px;
@@ -145,7 +146,8 @@ body {
     height: 852px;
 }
 .visual-bg {
-    background-image: url(../img/Rectangle\ 141.png);
+}
+.visual-img {
 }
 .promo {
     width: 1143px;
@@ -160,4 +162,11 @@ body {
 }
 .container-promo {
     display: flex;
+    width: 1141px;
+    height: 600px;
+}
+.promo-left {
+    background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0) 100%);
+    width: 367.32px;
+    height: 600px;
 }
