@@ -318,6 +318,7 @@ body {
 .schedule-grid {
     display: grid;
     grid-template-columns: repeat(3, 367px);
+    grid-template-rows: repeat(3);
     gap: 20px;
     position: relative;
 }
@@ -349,4 +350,7 @@ span {
     font-size: 18px;
     line-height: 125%;
     color: #2B3541;
+}
+.enroll {
+    background: #F3F3F3;
 }
