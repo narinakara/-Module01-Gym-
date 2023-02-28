@@ -2,8 +2,11 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 .container {
-    width: 1920px;
-    height: 4309px;
+    max-width: 1141px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  
 }
 .container-header {
     max-width: 1141px;
@@ -149,24 +152,201 @@ body {
 }
 .visual-img {
 }
-.promo {
-    width: 1143px;
-    height: 690px;
-    margin: 160px 390px 160px 387px;
+.bg-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
 }
-.promo-title {
+
+/* event */
+
+.event {
+    margin-top: 160px;
+}
+.section-title {
+    max-width: 470px;;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 40px;
+    line-height: 1.3;
+    margin-left: -3px;
+    letter-spacing: 0.09px;
+    margin-bottom: 39px;
+    color: #2B3541;
+}
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 600px;
+    gap: 20px;
+    position: relative;
+}
+.events-grid__item {
+    position: relative;
+}
+.gradient {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(251, 241, 56, .3) 0%, rgba(253, 249, 182, 0) 100%);   
+ }  
+.events-grid__cover:hover .gradient{
+    background: linear-gradient(180deg, rgba(251, 241, 56, .6) 0%, rgba(253, 249, 182, 0) 100%);  
+ }
+.events-grid__cover {
+    overflow: hidden;
+}
+.marathon {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-image:url(../img/maraphon.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.events__time {
+    font-family: 'Montserrat', sans-serif;
+   
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 150%;
+    color: #2B3541;
+    opacity: 0.6;
+}
+.events-grid__table {
+    padding: 30px;
+}
+.events__title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
     line-height: 125%;
     color: #2B3541;
 }
-.container-promo {
+.events-grid-text {
+    position: absolute;
+    width: 100%;
     display: flex;
-    width: 1141px;
-    height: 600px;
+    justify-content: end;
+    bottom: 0;
+    align-items: end;
 }
-.promo-left {
-    background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0) 100%);
-    width: 367.32px;
-    height: 600px;
+.events-image {
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/icon/addplus.svg);
+    background-repeat: no-repeat;
+    display: none;
+}
+.events-text{
+    margin: 0;
+    right: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: #2B3541;
+    padding: 11px 21px;
+    background: #FBF138;
+}
+.open-modal {
+    position: absolute;
+    top: 185px;
+    left: 30px;
+    opacity: 0;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FBF138;
+    background: #2B3541;
+    box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.28);
+    padding: 20px 37px;
+    transition: all .5s ease;
+}
+.events-grid__item:hover .open-modal {  
+    opacity: 1;
+    cursor: pointer;
+    z-index: 1;
+    transition: all .5s ease;    
+}
+.marathon2 {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-image: url(../img/Vebinar\ 1.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.marathon3 {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-image: url(../img/Vebinar\ 2.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.schedule {
+    margin-top: 160px;
+}
+.schedule-caption {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.section-title-subtitle {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 125%;
+    color: #2B3541;
+}
+.schedule-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 367px);
+    gap: 20px;
+    position: relative;
+}
+.schedule-grid__item {
+    position: relative;
+}
+.schedule-grid__cover {
+    border: 1px solid #2B3541;
+}
+.schedule-grid__cover:hover .schedule-gradient {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 100%);
+    opacity: 0.7;
+}
+.schedule__time {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #2B3541;
+    margin-left: 206px;
+}
+span {
+    display: block;
+}
+.schedule__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 125%;
+    color: #2B3541;
 }

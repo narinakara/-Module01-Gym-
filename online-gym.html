@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <div class="container">
+    <div>
         <header>
-            <div class="container-header">
+            <div class="container">
                 <div class="header">
                     <div class="header-item">
                         <a href="#" class="header-logo"></a>
@@ -58,32 +58,137 @@
                     <div class="visual-bg"></div>
                     <img class="visual-img" src="img/girl.png" alt="Sport">
                 </div>
+                <img class="bg-img" src="img/arrow.svg">
             </div>
         </div>
-        <div class="promo">
-            <h2 class="promo-title">Ближайшие события</h2>
-            <div class="container-promo">
-                <div class="promo-left">
-                    <img src="img/maraphon.png" alt="Марафон">
-                    <p class="promo-text">29.06-4.07</p>
-                    <h4 class="promo-subtitle">Марафон выносливости</h4>
-                    <button class="promo-button">записаться</button>
-                    <button class="promo-btn">марафон</button>
-                </div>
-                <div class="promo-center">
-                    <p class="promo-text">9.07</p>
-                    <h4 class="promo-subtitle">Как стать тренером?</h4>
-                    <button class="promo-button">записаться</button>
-                    <button class="promo-btn">вебинар</button>
-                </div>
-                <div class="promo-right">
-                    <p class="promo-text">15.07</p>
-                    <h4 class="promo-subtitle">Йога, как стиль жизни</h4>
-                    <button class="promo-button">записаться</button>
-                    <button class="promo-btn">вебинар</button>
+       <section class="event">
+            <div class="container">
+                <h2 class="section-title">Ближайшие события</h2>
+                <div class="events-grid">                     
+                    <div class="events-grid__item "> 
+                        <div class="events-grid__cover marathon">
+                            <div class="gradient">
+                                <div class="events-grid__table">
+                                    <span class="events__time">29.06 - 4.07</span>    
+                                    <h3 class="events__title">Марафон <br> выносливости</h3>
+                                </div>
+                                <div class="events-grid-text">
+                                    <div class="events-image"></div>
+                                    <p class="events-text">марафон</p>
+                                </div> 
+                            </div>                                 
+                            <button type="button" class="open-modal">Записаться</button>   
+                        </div>       
+                    </div>
+                    <div class="events-grid__item "> 
+                        <div class="events-grid__cover marathon2">
+                            <div class="gradient">
+                                <div class="events-grid__table">
+                                    <span class="events__time">9.07</span>    
+                                    <h3 class="events__title">Как стать <br> тренером?</h3>
+                                </div>
+                                <div class="events-grid-text">
+                                    <div class="events-image"></div>
+                                    <p class="events-text">вебинар</p>
+                                </div> 
+                            </div>                                 
+                            <button type="button" class="open-modal">Записаться</button>   
+                        </div>       
+                    </div>
+                    <div class="events-grid__item "> 
+                        <div class="events-grid__cover marathon3">
+                            <div class="gradient">
+                                <div class="events-grid__table">
+                                    <span class="events__time">15.07</span>    
+                                    <h3 class="events__title">Йога, как стиль <br> жизни</h3>
+                                </div>
+                                <div class="events-grid-text">
+                                    <div class="events-image"></div>
+                                    <p class="events-text">вебинар</p>
+                                </div> 
+                            </div>                                 
+                            <button type="button" class="open-modal">Записаться</button>   
+                        </div>       
+                    </div>
                 </div>
             </div>
-        </div>
+       </section>
+       <section class="schedule">
+            <div class="container">
+                <div class="schedule-caption">
+                    <h2 class="section-title">Расписание <br> тренировок</h2>
+                    <h2 class="section-title-subtitle">22 - 28 июня</h2>
+                </div>
+                <div class="schedule-grid">
+                    <div class="schedule-grid__item">
+                        <div class="schedule-grid__cover">
+                            <div class="schedule-gradient">
+                                <div class="schedule-grid__table">
+                                    <span class="schedule__time">22 июня, 10:00</span>
+                                    <img class="schedule-image1" src="img/body.svg"></img>
+                                    <h5 class="schedule__title">Функциональный тренинг</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule-grid__item">
+                        <div class="schedule-grid__cover">
+                            <div class="schedule-gradient">
+                                <div class="schedule-grid__table">
+                                    <span class="schedule__time">24 июня, 10:00</span>
+                                    <img class="schedule-image2" src="img/bottle.svg"></img>
+                                    <h5 class="schedule__title">Body sculpt</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule-grid__item">
+                        <div class="schedule-grid__cover">
+                            <div class="schedule-gradient">
+                                <div class="schedule-grid__table">
+                                    <span class="schedule__time">26 июня, 11:00</span>
+                                    <img class="schedule-image3" src="img/dumbbell.svg"></img>
+                                    <h5 class="schedule__title">L.A.B.</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule-grid__item">
+                        <div class="schedule-grid__cover">
+                            <div class="schedule-gradient">
+                                <div class="schedule-grid__table">
+                                    <span class="schedule__time">23 июня, 10:00</span>
+                                    <img class="schedule-image4" src="img/jump.svg"></img>
+                                    <h5 class="schedule__title">Силовой микс</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule-grid__item">
+                        <div class="schedule-grid__cover">
+                            <div class="schedule-gradient">
+                                <div class="schedule-grid__table">
+                                    <span class="schedule__time">25 июня, 11:00</span>
+                                    <img class="schedule-image5" src="img/heart.svg"></img>
+                                    <h5 class="schedule__title">Дыхательные практики</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule-grid__item">
+                        <div class="schedule-grid__cover">
+                            <div class="schedule-gradient">
+                                <div class="schedule-grid__table">
+                                    <span class="schedule__time">27 июня, 10:00</span>
+                                    <img class="schedule-image6" src="img/weight.svg"></img>
+                                    <h5 class="schedule__title">Комплексная разминка</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </section>
     </div>
 </body>
 </html>
