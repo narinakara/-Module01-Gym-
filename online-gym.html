@@ -56,18 +56,18 @@
                         </div>
                     </div>
                     <div class="visual">
-                        <div class="visual-bg"></div>
+                        <img class="visual-bg" src="img/grad.png" alt="gradient">
                         <img class="visual-img" src="img/girl.png" alt="Sport">
                     </div>
                     <div class="link-img">
-                        <a href="#event">
+                        <a href="#event" class="bg-button">
                             <img class="bg-img" src="img/arrow.svg">
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-       <section class="event" id="#event">
+       <section class="event" id="event">
             <div class="container">
                 <h2 class="section-title">Ближайшие события</h2>
                 <div class="events-grid">                     
@@ -171,20 +171,25 @@
                 </div>
             </div>
        </section>
-       <div class="enroll">
+       <section class="enroll">
             <div class="container-enroll">
-                <img class="img-enroll" src="img/cr.png">
-                <h2 class="enroll-title">Подпишитесь на рассылку</h2>
-                <div class="enroll-mail">
-                    <input type="email" placeholder="Ваш e-mail" class="email">
-                    <button class="enroll-button">Подписаться</button>
-                </div>
-                <div class="agreement">
-                    <input type="checkbox" id="01" class="checkbox">
-                    <label for="01">Согласен с обработкой <a href="https://annblok.ru/workshop" target="_blank" class="blank">персональных данных</a></label>
+                <div class="enroll-content">
+                    <h2 class="enroll-title">Подпишитесь на рассылку</h2>
+                    <div class="enroll-mail">
+                        <form class="enroll-form" action="#">
+                            <div class="enroll-form-body">
+                                <input type="email" placeholder="Ваш e-mail" class="email" required>
+                                <button class="enroll-button">Подписаться</button>
+                            </div>
+                            <div class="agreement">
+                                <input type="checkbox" id="01" class="checkbox">
+                                <label for="01">Согласен с обработкой <a href="https://annblok.ru/workshop" target="_blank" class="blank">персональных данных</a></label>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-       </div>
+       </section>
        <div class="preview">
         <div class="container">
             <div class="company">
@@ -234,7 +239,6 @@
                             </li>
                         </ul>
                     </nav>
-                    <img class="img-footer" src="img/cry.png">
                     <p class="footer-text">info@freefit.com</p>
                     <ul class="footer-list">
                         <li class="footer-list-item">
@@ -255,3 +259,20 @@
     </div>
 </body>
 </html>
+<script>
+     // Smooth Scroll
+     const links = document.querySelectorAll(".bg-button");
+
+        for (const link of links) {
+            link.addEventListener("click", clickHandler);
+        }
+
+        function clickHandler(e) {
+            e.preventDefault();
+            const href = this.getAttribute("href");
+
+            document.querySelector(href).scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+</script>

@@ -150,8 +150,14 @@ body {
     height: 852px;
 }
 .visual-bg {
+    position: absolute;
+    right: 185px;
+    z-index: -1;
 }
 .visual-img {
+    position: absolute;
+    width: 996px;
+    height: 930px;
 }
 .bg-img {
     position: absolute;
@@ -392,35 +398,59 @@ span {
     color: #2B3541;
 }
 .enroll {
-    background: #F3F3F3;
+    /* background: #F3F3F3; */
     margin-top: 100px;
 }
 .container-enroll {
     text-align: center;
     padding-top: 62px;
     padding-bottom: 80px;
+    background: #F3F3F3;
+    /* margin-top: 100px; */
 }
-.img-enroll {
-    position: absolute;
-    top: 2940px;
-    left: 415px;
+.enroll-content {
+    max-width: 645px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
 }
 .enroll-title {
     font-weight: 700;
     font-size: 40px;
     line-height: 49px;
     color: #2B3541;
+    z-index: 1;
+    position: relative;
+}
+.enroll-title::before {
+    content: '';
+    width: 53px;
+    height: 53px;
+    border-radius: 50%;
+    background: #FBF138;
+    box-shadow: 0px 13px 24px rgb(251 241 56 / 30%);
+    position: absolute;
+    left: 3px;
+    top: -21px;
+    z-index: -1;
+}
+.enroll-form-body {
+    display: flex;
+    gap: 20px;
 }
 .email {
     width: 372px;
     height: 65px;
+    padding-left: 10px;
     background: #FFFFFF;
     border-style: none;
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
     color: #2B3541;
-    opacity: 0.3;
+}
+.email::placeholder {
+    opacity: .3;
 }
 .email:focus {
     border-color: #FBF138;
@@ -447,11 +477,11 @@ span {
     color: #FBF138;
 }
 .agreement {
+    max-width: 304px;
     font-weight: 400;
     font-size: 11px;
     line-height: 150%;
     color: #2B3541;
-    opacity: 0.5;
     margin-top: 10px;
 }
 .checkbox:checked,
@@ -623,16 +653,23 @@ span {
     text-decoration: underline;
     color: #2B3541;;
 }
-.img-footer {
-    position: absolute;
-    left: 995px;
-    top: 4124px;
-}
 .footer-text {
     font-weight: 700;
     font-size: 16px;
     line-height: 150%;
     color: #2B3541;
+}
+.footer-text::before {
+    content: '';
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #FBF138;
+    box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
+    position: absolute;
+    left: 1025px;
+    top: 4130px;
+    z-index: 1;
 }
 .footer-list {
     display: flex;
