@@ -17,6 +17,9 @@
                 <div class="header">
                     <div class="header-item">
                         <a href="#" class="header-logo"></a>
+                        <div class="header-burger">
+                            <button class="burger" onclick="openModal()"></button>
+                        </div>
                         <nav class="header-menu">
                             <ul class="header-nav">
                                 <li class="header-nav-link">
@@ -251,22 +254,51 @@
         </div>
        </div>
     </div>
+    <div class="modal" id="modal">
+        <ul class="header-nav header-nav-mobile">
+            <li class="header-nav__link"><a href="index.html">Мероприятия</a></li><hr class="hr-burger">
+            <li class="header-nav__link"><a href="#" class="active">Расписание</a></li><hr class="hr-burger">
+            <li class="header-nav__link"><a href="#">О компании</a></li>
+        </ul>
+        <ul class="modal-list">
+            <li class="modal-list-item">
+                <a href="#" target="_blank" class="modal-list-link1"></a>
+            </li>
+            <li class="modal-list-item">
+                <a href="#" target="_blank" class="modal-list-link2"></a>
+            </li>
+        </ul>
+        <div class="header-modal">
+            <a href="#" class="logo-burger"></a>
+            <button class="burger-close" onclick="closeModal ()"></button>
+        </div>
+    </div>
+    <script>
+        // Smooth Scroll
+        const links = document.querySelectorAll(".banner__arrow");
+   
+           for (const link of links) {
+               link.addEventListener("click", clickHandler);
+           }
+   
+           function clickHandler(e) {
+               e.preventDefault();
+               const href = this.getAttribute("href");
+   
+               document.querySelector(href).scrollIntoView({
+                   behavior: "smooth"
+               });
+           }
+
+            // Menu
+
+            function openModal() {
+                document.getElementById("modal").style.top = "0px";
+            }
+
+            function closeModal() {
+                document.getElementById("modal").style.top = "-400px";
+            }
+   </script>
 </body>
 </html>
-<script>
-     // Smooth Scroll
-     const links = document.querySelectorAll(".banner__arrow");
-
-        for (const link of links) {
-            link.addEventListener("click", clickHandler);
-        }
-
-        function clickHandler(e) {
-            e.preventDefault();
-            const href = this.getAttribute("href");
-
-            document.querySelector(href).scrollIntoView({
-                behavior: "smooth"
-            });
-        }
-</script>
