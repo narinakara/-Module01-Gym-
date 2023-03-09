@@ -29,7 +29,7 @@
                                     <a href="#">Расписание</a>
                                 </li>
                                 <li class="header-nav-link">
-                                    <a href="#">О компании</a>
+                                    <a href="#">О&nbspкомпании</a>
                                 </li>
                             </ul>
                         </nav>
@@ -222,7 +222,8 @@
        <div class="footer">
         <div class="container">
                 <div class="footer-item">
-                    <a href="#" class="footer-logo"></a>
+                    <div class="footer-item3">
+                        <a href="#" class="footer-logo"></a>
                     <nav class="footer-menu">
                         <ul class="footer-nav">
                             <li class="footer-nav-link">
@@ -232,11 +233,13 @@
                                 <a href="#">Расписание</a>
                             </li>
                             <li class="footer-nav-link">
-                                <a href="#">О компании</a>
+                                <a href="#">О&nbspкомпании</a>
                             </li>
                         </ul>
                     </nav>
-                    <p class="footer-text">info@freefit.com</p>
+                    </div>
+                    <div class="footer-info">
+                        <p class="footer-text">info@freefit.com</p>
                     <ul class="footer-list">
                         <li class="footer-list-item">
                             <a href="#" target="_blank" class="footer-list-link1"></a>
@@ -245,6 +248,7 @@
                             <a href="#" target="_blank" class="footer-list-link2"></a>
                         </li>
                    </ul>
+                    </div>
                 </div>
                 <div class="footer-item2">
                     <p class="footer-copyright">© 2022, Все права защищены</p>
@@ -255,6 +259,12 @@
        </div>
     </div>
     <div class="modal" id="modal">
+        <div class="header-modal">
+            <div class="header-modal__box">
+                <a href="#" class="logo-burger"></a>
+                <button class="burger-close" onclick="closeModal ()"></button>
+            </div>
+        </div>
         <ul class="header-nav header-nav-mobile">
             <li class="header-nav__link"><a href="index.html">Мероприятия</a></li><hr class="hr-burger">
             <li class="header-nav__link"><a href="#" class="active">Расписание</a></li><hr class="hr-burger">
@@ -268,10 +278,6 @@
                 <a href="#" target="_blank" class="modal-list-link2"></a>
             </li>
         </ul>
-        <div class="header-modal">
-            <a href="#" class="logo-burger"></a>
-            <button class="burger-close" onclick="closeModal ()"></button>
-        </div>
     </div>
     <script>
         // Smooth Scroll
@@ -297,7 +303,7 @@
             }
 
             function closeModal() {
-                document.getElementById("modal").style.top = "-400px";
+                document.getElementById("modal").style.top = "-500px";
             }
    </script>
 </body>
