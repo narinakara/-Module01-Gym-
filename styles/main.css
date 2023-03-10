@@ -26,7 +26,7 @@ body {
 .header-logo {
     display: block;
     background-image: url(../img/logo.svg);
-    width: 92px;
+    width: 97px;
     height: 30px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -242,14 +242,14 @@ body {
     position: absolute;
     width: 100%;
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     bottom: 0;
     align-items: end;
 }
 .events-image {
     width: 30px;
     height: 30px;
-    background-image: url(../images/icon/addplus.svg);
+    background-image: url();
     background-repeat: no-repeat;
     display: none;
 }
@@ -630,10 +630,14 @@ span {
     justify-content: space-between;
     padding-top: 35px;
 }
+.footer-blok1 {
+    display: flex;
+    align-items: center;
+}
 .footer-logo {
     display: block;
     background-image: url(../img/logo.svg);
-    width: 92px;
+    width: 97px;
     height: 30px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -655,6 +659,10 @@ span {
 .footer-nav a:hover {
     text-decoration: underline;
     color: #2B3541;;
+}
+.footer-blok2 {
+    display: flex;
+    align-items: center;
 }
 .footer-text {
     font-weight: 700;
@@ -842,6 +850,40 @@ span {
         line-height: 32px;
     }
 }
+
+@media (max-width: 900px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) ;
+        grid-template-rows: 333px 224px 224px;
+        gap: 20px;
+     }
+     .schedule-grid__item:nth-child(1) {
+        /* width: 48vw; */
+        grid-row: 1 / 2;  
+     }
+     .schedule-grid__item:nth-child(2) {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+     }
+     .schedule-grid__item:nth-child(3) {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+     }
+     .schedule-grid__item:nth-child(4) {
+        grid-column: 2 / 4;
+        grid-row: 1 / 2;
+     }
+     .schedule-grid__item:nth-child(5) {
+        grid-column: 2 / 4;
+        grid-row: 2 / 3;
+     }
+     .schedule-grid__item:nth-child(6) {
+        grid-column: 2 / 4;
+        grid-row: 3 / 4;
+     }
+}
+
 @media (min-width: 769px) {
     .header-burger {
         display: none;
@@ -885,7 +927,7 @@ span {
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: "a b" "c c";
         grid-template-rows: 309px;
-        gap: 20px;
+        gap: 11px 20px;
     }
     .marathon:nth-child(1) {
         grid-area: a;
@@ -899,14 +941,17 @@ span {
     .marathon {
         width: 364px;
         height: 309px;
+        background-image: url(../img/01.png);
     }
     .marathon2 {
         width: 364px;
         height: 309px;
+        background-image: url(../img/02.png);
     }
     .marathon3 {
         width: 748px;
         height: 336px;
+        background-image: url(../img/03.png);
     }
     .events__time {
         font-size: 12px;
@@ -916,11 +961,13 @@ span {
         font-size: 16px;
         line-height: 120%;
     }
-    .events-grid-text {
-        justify-content: start;
-    }
     .events-image {
-        
+        width: 30px;
+        height: 30px;
+        background-image: url(../img/cre.png);
+        background-repeat: no-repeat;
+        display: block;
+        order: 2;
     }
     .events-text {
         font-size: 12px;
@@ -941,8 +988,29 @@ span {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: none;
     }
-    .schedule-grid__item {
-        
+    .enroll-title {
+        font-size: 26px;
+        line-height: 32px;
+    }
+    .enroll-title::before {
+        width: 31px;
+        height: 31px;
+        left: 120px;
+        top: -13px;
+    }
+    .enroll-form-body {
+        display: grid;
+        justify-content: center;
+    }
+    .email {
+        width: 340px;
+    }
+    .enroll-button {
+        width: 340px;
+    }
+    .agreement {
+        max-width: 293px;
+        height: 24px;
     }
     .desc-title {
         font-size: 26px;
@@ -972,11 +1040,154 @@ span {
         font-size: 16px;
     }
     .footer {
+        max-width: 768px;
         height: 280px;
         margin-top: 94px;
     }
     .footer-item {
         padding-top: 56px;
+        display: block;
+    }
+    .footer-blok1 {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+    .footer-menu {
+        width: 293px;
+        height: 18px;
+    }
+    .footer-nav {
+        gap: 25px;
+    }
+    .footer-blok2 {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        margin-bottom: 47px;
+    }
+    .footer-text {
+        font-size: 12px;
+        height: 18px;
+        width: 108px;
+    }
+    .footer-copyright {
+        font-size: 10px;
+    }
+    .footer-copyright2 {
+        font-size: 10px;
+    }
+}
+@media (max-width: 361px) {
+    .container {
+        padding: 0;
+    }
+    .burger {
+        width: 29px;
+    }
+    .header-item {
+        flex-basis: 54%;
+    }
+    .modal {
+        width: 350px;
+        height: 462px;
+    }
+    .modal .header-nav {
+        gap: 12px;
+        margin-top: 10px;
+    }
+    .section-title {
+        margin-bottom: 20px;
+    }
+    .events-grid {
+        grid-template-columns: repeat(2, 150px);
+        gap: 10px 25px;
+    }
+    .marathon {
+        width: 165px;
+        height: 310px;
+        background-image: url(../img/010.png);
+    }
+    .events-grid__table {
+        margin-left: -10px;
+        padding-top: 20px;
+    }
+    .marathon2 {
+        width: 165px;
+        height: 310px;
+        background-image: url(../img/020.png);
+    }
+    .marathon3 {
+        width: 340px;
+        height: 336px;
+        background-image: url(../img/030.png);
+    }
+    .schedule {
+        margin-top: 55px;
+    }
+    .schedule-grid {
+        display: block;
+    }
+    .schedule-grid__item {
+        margin-bottom: 20px;
+        width: 340px;
+        height: 114px;
+    }
+    .schedule__time {
+        font-size: 16px;
+    }
+    .schedule-grid__table {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding-bottom: 25px;
+    }
+    .schedule-image1 {
+        width: 39px;
+        height: 39px;
+    }
+    .schedule-image2 {
+        width: 23px;
+        height: 45px;
+    }
+    .schedule-image3 {
+        width: 46px;
+        height: 25px;
+    }
+    .schedule-image4 {
+        width: 34px;
+        height: 53px;
+    }
+    .schedule-image5 {
+        width: 39px;
+        height: 37px;
+    }
+    .schedule-image6 {
+        width: 35px;
+        height: 40px;
+    }
+    .schedule__title {
+        font-size: 16px;
+        line-height: 120%;
+        margin: 0;
+    }
+    .enroll-title::before {
+        left: 30px;
+    }
+    .desc-title {
+        width: 173px;
+        height: 32px;
+    }
+    .desc-text {
+        width: 340px;
+        height: 117px;
+        margin-bottom: 34px;
+    }
+    .desc-button {
+        width: 340px;
+        height: 65px;
+    }
+    .company-img {
         display: none;
     }
 }
