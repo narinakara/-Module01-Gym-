@@ -6,7 +6,6 @@ body {
     margin: 0 auto;
     padding-left: 10px;
     padding-right: 10px;
-  
 }
 .container-header {
     max-width: 1141px;
@@ -87,7 +86,6 @@ body {
     margin: 0 auto;
     padding-left: 10px;
     padding-right: 10px;
-  
 }
 .banner {
     display: none;
@@ -96,7 +94,6 @@ body {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
 }
 .banner__content {
     width: 676px;
@@ -162,7 +159,6 @@ body {
     position: relative;
     height: 743px;
 }
-
 .banner__image {
     position: absolute;
     display: block;
@@ -203,10 +199,10 @@ body {
     height: 100%;
     position: absolute;
     background: linear-gradient(180deg, rgba(251, 241, 56, .3) 0%, rgba(253, 249, 182, 0) 100%);   
- }  
+}  
 .events-grid__cover:hover .gradient{
     background: linear-gradient(180deg, rgba(251, 241, 56, .6) 0%, rgba(253, 249, 182, 0) 100%);  
- }
+}
 .events-grid__cover {
     overflow: hidden;
 }
@@ -221,7 +217,6 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
 }
-
 .events__time {
     font-family: 'Montserrat', sans-serif;
    
@@ -852,6 +847,7 @@ span {
 }
 
 /* Responsive */
+
 @media (max-width: 1049px) {
     .header-item {
         flex-basis: 90%;
@@ -1007,7 +1003,7 @@ span {
         gap: 21px;
     }
     .header-item {
-        flex-basis: 23.9%;
+        flex-basis: 23%;
     }
     .header-logo {
         width: 78px;
@@ -1066,7 +1062,8 @@ span {
         top: -13px;
     }
     .enroll-form-body {
-        display: grid;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
     }
     .email {
@@ -1074,6 +1071,7 @@ span {
     }
     .enroll-button {
         width: 340px;
+        order: 3;
     }
     .agreement {
         max-width: 293px;
@@ -1126,6 +1124,7 @@ span {
     }
     .footer-blok1 {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         margin-bottom: 22px;
     }
@@ -1162,17 +1161,39 @@ span {
     }
 }
 @media (max-width: 645px) {
-    .desc-title {
-        
-    }
-    .desc-text {
-       
-    }
-    .desc-button {
-        
+    .desc {
+        flex-basis: 100%;
     }
     .company-img {
         display: none;
+    }
+}
+@media (max-width: 535px) {
+    .footer-item {
+        padding-top: 38px;
+    }
+    .footer-blok1 {
+        display: block;
+        margin-bottom: -9px;
+    }
+    .footer-logo {
+        margin: auto;
+    }
+    .footer-menu {
+        margin: auto;
+        margin-top: 41px;
+    }
+    .footer-nav-link {
+        font-size: 12px;
+        line-height: 150%;
+    }
+    .footer-blok2 {
+        justify-content: space-between;
+        margin-left: 10px;
+    }
+    .footer-item2 {
+        display: block;
+        text-align: center;
     }
 }
 @media (max-width: 500px) {
@@ -1221,6 +1242,11 @@ span {
         font-size: 16px;
         line-height: 120%;
         margin: 0;
+    }
+}
+@media (max-width: 487px) {
+    .marathon3 {
+        background-image: url(../img/030.png);
     }
 }
 @media (max-width: 361px) {
@@ -1363,31 +1389,5 @@ span {
     .company-text {
         font-size: 16px;
         line-height: 150%;
-    }
-    .footer-item {
-        padding-top: 38px;
-    }
-    .footer-blok1 {
-        display: block;
-        margin-bottom: -9px;
-    }
-    .footer-logo {
-        margin-left: 132px;
-    }
-    .footer-menu {
-        margin-left: 10px;
-        margin-top: 41px;
-    }
-    .footer-nav-link {
-        font-size: 12px;
-        line-height: 150%;
-    }
-    .footer-blok2 {
-        justify-content: space-between;
-        margin-left: 10px;
-    }
-    .footer-item2 {
-        display: block;
-        text-align: center;
     }
 }
