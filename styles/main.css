@@ -605,7 +605,13 @@ span {
     flex-basis: 50%;
 }
 .company-imges {
-    position: relative;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 105%;
 }
 .company-two {
     display: flex;
@@ -1003,7 +1009,7 @@ span {
         gap: 21px;
     }
     .header-item {
-        flex-basis: 23%;
+        flex-basis: 25%;
     }
     .header-logo {
         width: 78px;
@@ -1090,8 +1096,7 @@ span {
         margin-bottom: 30px;
     }
     .company-imges {
-        width: 372.85px;
-        height: 237px;
+        
     }
     .desc-button {
         width: 214px;
@@ -1166,6 +1171,11 @@ span {
     }
     .company-img {
         display: none;
+    }
+}
+@media (max-width: 610px) {
+    .header-item {
+        flex-basis: 40%;
     }
 }
 @media (max-width: 535px) {
