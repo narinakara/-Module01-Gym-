@@ -81,12 +81,6 @@ body {
     transform: scale(1.2);
     opacity: 1;
 }
-.container {
-    max-width: 1141px;
-    margin: 0 auto;
-    padding-left: 10px;
-    padding-right: 10px;
-}
 .banner {
     display: none;
 }
@@ -435,12 +429,18 @@ span {
     top: -21px;
     z-index: -1;
 }
+.enroll-mail {
+    margin: auto;
+}
 .enroll-form-body {
-    display: flex;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    margin: auto;
+    row-gap: 20px;
 }
 .email {
-    width: 372px;
+    max-width: 372px;
     height: 65px;
     padding-left: 10px;
     background: #FFFFFF;
@@ -895,7 +895,7 @@ span {
         grid-template-columns: repeat(2, 1fr);
         /* grid-template-areas: "a b" "c c"; */
         grid-template-rows: 309px 336px;
-        gap: 11px 20px;
+        gap: 11px 11px;
     }
     .mobile {
         grid-column: 1/3;
@@ -1057,30 +1057,28 @@ span {
     .enroll {
         margin-top: 92px;
     }
+    .enroll-content {
+        gap: 20px;
+    }
     .enroll-title {
         font-size: 26px;
         line-height: 32px;
+        margin: auto;
     }
     .enroll-title::before {
         width: 31px;
         height: 31px;
-        left: 120px;
+        left: -13px;
         top: -13px;
     }
     .enroll-form-body {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .email {
-        width: 340px;
+        grid-template-columns: repeat(1, 1fr);
     }
     .enroll-button {
-        width: 340px;
+        width: 100%;
         order: 3;
     }
     .agreement {
-        max-width: 293px;
         height: 24px;
     }
     .preview {
@@ -1094,9 +1092,6 @@ span {
     .desc-text {
         font-size: 16px;
         margin-bottom: 30px;
-    }
-    .company-imges {
-        
     }
     .desc-button {
         width: 214px;
@@ -1132,9 +1127,17 @@ span {
         flex-direction: column;
         justify-content: space-between;
         margin-bottom: 22px;
+        gap: 10px;
+    }
+    .footer-logo {
+        margin-right: 0;
     }
     .footer-nav {
-        gap: 25px;
+        justify-content: space-between;
+        gap: 17px;
+    }
+    .footer-menu {
+        width: 100%;
     }
     .footer-blok2 {
         display: flex;
@@ -1208,11 +1211,11 @@ span {
 }
 @media (max-width: 500px) {
     .schedule-grid {
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
     .schedule-grid__item {
         margin-bottom: 20px;
-        width: 410px;
         height: 114px;
     }
     .schedule__time {
@@ -1259,10 +1262,12 @@ span {
         background-image: url(../img/030.png);
     }
 }
-@media (max-width: 361px) {
-    .container {
-        padding: 0;
+@media (max-width: 450px) {
+    .enroll-title {
+        max-width: 196px;
     }
+}
+@media (max-width: 361px) {
     .burger {
         width: 29px;
     }
@@ -1281,11 +1286,10 @@ span {
         margin-bottom: 20px;
     }
     .events-grid {
-        grid-template-columns: repeat(2, 150px);
-        gap: 10px 25px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px 11px;
     }
     .marathon {
-        width: 165px;
         height: 310px;
         background-image: url(../img/010.png);
     }
@@ -1294,13 +1298,10 @@ span {
         padding-top: 20px;
     }
     .marathon2 {
-        width: 165px;
         height: 310px;
         background-image: url(../img/020.png);
     }
     .marathon3 {
-        width: 340px;
-        height: 336px;
         background-image: url(../img/030.png);
     }
     .schedule {
@@ -1311,7 +1312,6 @@ span {
     }
     .schedule-grid__item {
         margin-bottom: 18px;
-        width: 300px;
         height: 74px;
     }
     .schedule__time {
@@ -1362,9 +1362,6 @@ span {
     .enroll-title {
         margin-bottom: 50px;
     }
-    .enroll-title::before {
-        left: 60px;
-    }
     .preview {
         margin-top: 58px;
     }
@@ -1379,7 +1376,7 @@ span {
         margin-bottom: 34px;
     }
     .desc-button {
-        width: 340px;
+        width: 100%;
         height: 65px;
     }
     .company-img {
