@@ -11,6 +11,10 @@ body {
     max-width: 1141px;
     margin: 0 auto;
 }
+.site-header {
+    margin-bottom: 50px;
+
+}
 .header {
     display: flex;
     align-items: center;
@@ -81,7 +85,7 @@ body {
     transform: scale(1.2);
     opacity: 1;
 }
-.banner__box {
+/* .banner__box {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -158,7 +162,7 @@ body {
     object-fit: contain;
     left: -40%;
     bottom: -80px;
-}
+} */
 
 /* event */
 
@@ -851,7 +855,7 @@ span {
 }
 
 /* Responsive */
-
+/* 
 @media (max-width: 1480px) {
     .banner__content {
         width: 676px;
@@ -869,7 +873,7 @@ span {
         left: initial;
         right: calc(12px + -98 *((100vw - 768px) * 0.2/1480));
     }
-}
+} */
 @media (max-width: 1049px) {
     .header-item {
         flex-basis: 90%;
@@ -1042,7 +1046,7 @@ span {
         width: 26px;
         height: 26px;
     }
-    .banner__content {
+    /* .banner__content {
         margin-top: 27px;
         max-width: 359px;
     }
@@ -1057,8 +1061,8 @@ span {
     }
     .content-holder {
         margin-left: 0;
-    }
-    .banner-text {
+    } */
+    /* .banner-text {
         font-size: 16px;
         margin-top: 0;
         margin-bottom: 58px;
@@ -1071,7 +1075,7 @@ span {
         width: 100%;
         bottom: -49px;
         right: calc(-7px + -242 *((100vw - 540px) * 0.2/768));
-    }
+    } */
     .section-title {
         margin-bottom: 21px;
     }
@@ -1254,7 +1258,7 @@ span {
         text-align: center;
     }
 }
-@media (max-width: 531px) {
+/* @media (max-width: 531px) {
     .banner__box {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -1271,7 +1275,7 @@ span {
     .banner__image {
         width: 100%;
     }
-}
+} */
 @media (max-width: 500px) {
     .schedule-grid {
         display: flex;
@@ -1345,7 +1349,7 @@ span {
         gap: 12px;
         margin-top: 10px;
     }
-    .banner__box {
+    /* .banner__box {
         grid-template-columns: none;
     }
     .banner__content {
@@ -1359,7 +1363,7 @@ span {
     }
     .banner-button {
         padding: 23px 70px;
-    }
+    } */
     .section-title {
         margin-bottom: 20px;
     }
