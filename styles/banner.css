@@ -17,7 +17,6 @@
 .banner__body {
 	padding-top: 25px;
     width: 63%;
-    z-index: 1;
     padding-bottom: calc(24px + 16 * ((100vw - 320px) / 1140));
 }
 .banner__title {
